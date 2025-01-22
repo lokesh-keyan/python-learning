@@ -28,4 +28,4 @@ jobs:
 
     - name: Run Pylint
       run: |
-        pylint leetcode  # Run pylint on all Python files in the repo
+        pylint $(git ls-files '*.py')  # Run pylint on all Python files in the repo
