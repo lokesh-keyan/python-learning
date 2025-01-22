@@ -29,4 +29,4 @@ jobs:
 
     - name: Run Pylint
       run: |
-        pylint $(find leetcode/array_And_hashing -name "*.py")  # Run pylint on all Python files in the repo
+        pylint $(find leetcode/array_and_hashing -name "*.py")  # Run pylint on all Python files in the repo
