@@ -4,7 +4,7 @@ disable=all
 
 [MESSAGES CONTROL]
 # Re-enable specific rules
-enable=C0103, R0201, W0102
+enable=C0103, W0102
 
 # Disable specific messages
 disable=C0304, C0114, C0115, C0116, R0903
