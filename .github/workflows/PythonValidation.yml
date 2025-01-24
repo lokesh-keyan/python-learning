@@ -41,16 +41,6 @@ jobs:
     needs: lint  # Ensures linting runs before testing
 
     steps:
-    # Step 1: Checkout the repository
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    # Step 2: Set up Python
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.13.1
-
     # Step 4: Run unit tests
     - name: Run unit tests
       run: |
