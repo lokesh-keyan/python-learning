@@ -32,14 +32,16 @@ class Solution:
         q = deque()
 
         for i in range(len(nums)):
-            while q and q[0] < i - k + 1:
+            while q and q[0] < i - k + 1: # check if the first index in the deque is out of the window compared to the current index
                 q.popleft()
-            
+            # check if the last value of the index in the deque is less than the current number, we only keep higher values in the first part of the deque
+            # deque only has max value for the current window as the first element
             while q and nums[q[-1]] < nums[i]:
                 q.pop()
             
             q.append(i)
 
+            # when we have the first k elements, we can start adding the max value of the window to the result, the first element of the deque is akways the max value of the current window
             if i >= k - 1:
                 res.append(nums[q[0]])
         
