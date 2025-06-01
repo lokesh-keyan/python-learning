@@ -9,7 +9,7 @@
 # Example 2:
 
 # Input: n = 1
-# Output: ["()"]
+# Output: ["()"] 
 
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
